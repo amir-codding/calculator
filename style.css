@@ -10,9 +10,10 @@ svg{
 }
 
 body{
-    background-image: url(./assets/images/wallpaper.png);
+    background-image: url(assets/images/wallpaper.png);
     width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
