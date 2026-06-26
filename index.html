@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <header class="header">
+        <div class="calculator-svg">
+            <img src="./svg/علامت های مشین حساب.svg" alt="">
+        </svg>
+        </div>
+        <h5>calulator</h5>
+        <div class="cal-title">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1"/>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zm0 0V5z"/>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1"/>
+          </svg>
+        </div>
+      </header>
+      <div class="result" id="display">0</div>
+      <div class="main-top">
+      </div>
+      <div class="main">
+        <button class="items item1" data-value="%">%</button>
+        <button class="items item2" data-value="CE">CE</button>
+        <button class="items item3" data-value="C">C</button>
+        <button class="items item4" data-value="Backspace">
+          <svg
+            xmlns="http://www.w3.org/2000/svg "
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M7.378 5.531a2.75 2.75 0 0 1 1.92-.781h10.297c.598 0 1.294.166 1.863.519c.579.358 1.11.974 1.11 1.856v9.75c0 .882-.531 1.497-1.11 1.856a3.65 3.65 0 0 1-1.863.519H9.298a2.75 2.75 0 0 1-1.92-.781l-5.35-5.216a1.75 1.75 0 0 1 0-2.506zM14.03 9.47a.75.75 0 1 0-1.06 1.06L14.44 12l-1.47 1.47a.75.75 0 1 0 1.06 1.06l1.47-1.47l1.47 1.47a.75.75 0 1 0 1.06-1.06L16.56 12l1.47-1.47a.75.75 0 1 0-1.06-1.06l-1.47 1.47z"/>
+            </svg>
+        </button>
+        <button class="items item5" data-value="x²">x²</button>
+        <button class="items item6" data-value="1/x">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 15h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h3m-9-9h14M9 3l6 6M9 9l6-6" />
+          </svg>
+        </button>
+        <button class="items item7" data-value="√">√</button>
+        <button class="items item8" data-value="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M14 7a2 2 0 1 1-4 0a2 2 0 0 1 4 0M3 12a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m9 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4"
+            />
+          </svg>
+        </button>
+        <button class="items item9" data-value="7">7</button>
+        <button class="items item10" data-value="8">8</button>
+        <button class="items item11" data-value="9">9</button>
+        <button class="items item12" data-value="*">×</button>
+        <button class="items item13" data-value="4">4</button>
+        <button class="items item14" data-value="5">5</button>
+        <button class="items item15" data-value="6">6</button>
+        <button class="items item16" data-value="-">-</button>
+        <button class="items item17" data-value="1">1</button>
+        <button class="items item18" data-value="2">2</button>
+        <button class="items item19" data-value="3">3</button>
+        <button class="items item20" data-value="+">+</button>
+        <button class="items item21" data-value="±">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          > 
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M6 9.22V11h2V8h3V6H8V3H6v3H3v2h3zM18.78 18H21v-2h-8v2zM4.04  20.04l.7.7l8-8l8-8l-.7-.7l-.71-.71l-8 8l-8 8z"
+            />
+          </svg>
+        </button>
+        <button class="items item22" data-value="0">0</button>
+        <button class="items item23" data-value=".">.</button>
+        <button class="items item24" data-value="=">=</button>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
